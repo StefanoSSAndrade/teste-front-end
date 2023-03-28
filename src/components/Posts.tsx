@@ -73,7 +73,7 @@ export const Posts = () => {
             setVisibleComments([...visibleComments, postId]);
         }
     };
-    
+
     return (
         <div className={styles.post}>
             <article className={styles.articlePost}>
@@ -105,8 +105,10 @@ export const Posts = () => {
                         </div>
                     );
                 })}
-                <button onClick={() => setCurrentPage(currentPage < 0 ? currentPage + 1 : currentPage - 1)}>Anterior</button>
-                <button onClick={() => setCurrentPage(currentPage > 10 ? currentPage - 1 : currentPage - 1)}>Próxima</button>
+                <footer className={styles.postButton}>
+                    <button onClick={() => setCurrentPage(currentPage < 0 ? currentPage + 1 : currentPage - 1)}>Anterior</button>
+                    <button onClick={() => setCurrentPage(currentPage > 10 ? currentPage - 1 : currentPage - 1)}>Próxima</button>
+                </footer>
             </article>
         </div>
     );
