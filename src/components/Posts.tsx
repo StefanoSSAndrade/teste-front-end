@@ -106,8 +106,8 @@ export const Posts = () => {
                     );
                 })}
                 <footer className={styles.postButton}>
-                    <button onClick={() => setCurrentPage(currentPage < 0 ? currentPage + 1 : currentPage - 1)}>Anterior</button>
-                    <button onClick={() => setCurrentPage(currentPage > 10 ? currentPage - 1 : currentPage - 1)}>Próxima</button>
+                    <button onClick={() => setCurrentPage(currentPage - 1)}>Anterior</button>
+                    <button onClick={() => setCurrentPage(currentPage + 1)}>Próxima</button>
                 </footer>
             </article>
         </div>
