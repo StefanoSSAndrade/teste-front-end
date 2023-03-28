@@ -1,0 +1,57 @@
+.articlePost {
+    padding: 0 0 1.5rem;
+    margin: 0 1rem 1rem;
+}
+
+.postContent {
+    border-radius: 8px;
+    background: #534F4F;
+    margin: 0 0 1rem;
+    padding: 0 1rem 1rem 1rem;
+    color: #fff;
+}
+
+.articlePost p{
+    border-radius: 8px;
+    margin: 0 0 .6rem 0;
+}
+
+.postAuthor {
+    margin: 0 0.5rem 0 0;
+    padding: 1rem 0 1rem 0;
+    color: #000;
+}
+
+.postAuthor strong {
+    font-size: 1.5rem;
+}
+
+
+.postAuthor a {
+    text-decoration: none;
+    padding: 0 0 0 1rem;
+    color: #fff;
+}
+
+.postContent {
+    margin: 0 0 1rem 0;
+}
+
+.postContent h2 {
+    font-size: 1.2rem;
+    margin: 0 0 .5rem 0;
+} 
+
+.show {
+    visibility: visible;
+    height: auto;
+    display: block;
+    margin: .6rem 0 0 0;
+}
+
+.hide {
+    visibility: hidden;
+    height: 0;
+    display: none;
+    margin: .6rem 0 0 0;
+}
