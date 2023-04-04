@@ -74,6 +74,17 @@ export const Posts = () => {
         }
     };
 
+    const [visibleButton, setVisibleButton] = useState<boolean>(false)
+
+    const handlePages = {
+        prevPage: () => {
+            setCurrentPage(currentPage - 1)
+        },
+        nextPage: () => {
+            setCurrentPage(currentPage + 1)
+        },
+    }
+
     return (
         <div className={styles.post}>
             <article className={styles.articlePost}>
@@ -106,8 +117,8 @@ export const Posts = () => {
                     );
                 })}
                 <footer className={styles.postButton}>
-                    <button onClick={() => setCurrentPage(currentPage - 1)}>Anterior</button>
-                    <button onClick={() => setCurrentPage(currentPage + 1)}>Próxima</button>
+                    <button onClick={handlePages.prevPage} disabled={currentPage < 2 && !visibleButton}>Anterior</button>
+                    <button onClick={handlePages.nextPage} disabled={currentPage > 9 && !visibleButton}>Próxima</button>
                 </footer>
             </article>
         </div>
