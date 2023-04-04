@@ -3,3 +3,8 @@
         font-size: 87.5%;
     }
 }
+
+.mainContainer {
+    width: 60%;
+    margin: auto;
+}
