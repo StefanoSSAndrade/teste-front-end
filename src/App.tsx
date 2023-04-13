@@ -1,12 +1,12 @@
-import { Posts } from "./components/Posts"
-import "./global.css"
 import styles from "./App.module.css"
+import "./global.css"
+import { Feed } from "./components/Feed"
 
 export const App = () => {
 
   return (
     <div className={styles.mainContainer}>
-      <Posts />
+        <Feed />
     </div>
   )
 }

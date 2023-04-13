@@ -1,0 +1,109 @@
+.feed {
+    background-color: #fff;
+    box-shadow: 1px 2px 8px #888888;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.feed h1 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #68ABFC;
+    padding-left: .5rem;
+}
+
+.feedContent {
+    background-color: #d0e4f5;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.feedContent .feedHeader {
+    margin-bottom: 1rem;
+}
+
+.feedContent .feedHeader a {
+    text-decoration: none;
+}
+
+.feedContent .feedHeader .author {
+    width: fit-content;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.feedContent .feedHeader span {
+    text-decoration: none;
+    color: #2C3E50 ;
+}
+
+.feedContent .feedHeader span:hover {
+    color: #ABB2B9;
+}
+
+.feedContent h2 {
+    font-size: 1.2rem;
+    margin-bottom: .4rem;
+}
+
+.feedContent .content {
+    margin-bottom: 1rem;
+}
+
+.commentContainer {
+    margin-top: 1rem;
+}
+
+.commentButtons {
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background-color: #68ABFC;
+    cursor: pointer;
+    width: 100%;
+}
+
+.comment {
+    background-color:  #bbd2e7;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 1px 2px 6px #c9c9c9;
+}
+
+.comment h3 {
+    margin-bottom: .4rem;
+    font-size: 1.5rem;
+}
+
+.comment p{
+    color: #252424;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button{
+    padding: .5rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background-color: #68ABFC;
+    cursor: pointer;
+}
+
+.pagination button + button {
+    margin-left: 1rem;
+}
+
+button:disabled {
+    background-color: #d1dbe5
+}
