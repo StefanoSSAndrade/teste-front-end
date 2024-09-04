@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from "react";
 import styles from "./UserDetailsModal.module.css"
-import { UsersInterface } from "./types/type.type";
+import { UsersInterface } from "./types/type";
 import { DataContext } from "./contexts/context";
 
 type Props = {
@@ -9,11 +9,9 @@ type Props = {
 
 export const UserDetailsModal = ({ onClose }: Props) => {
     const { users } = useContext(DataContext)
-    const { showmodal } = useContext(DataContext)
     const { actualPostId } = useContext(DataContext)
 
     const [usersDetails, setUsersDetails] = useState<UsersInterface[]>([])
-    const URLPosts = `https://jsonplaceholder.typicode.com/users/${users.id}`
 
     useEffect(() => {
         const fetchData = async () => {

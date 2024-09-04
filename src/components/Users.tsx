@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react"
 import { DataContext } from "./contexts/context";
-import { UsersInterface } from "./types/type.type";
+import { UsersInterface } from "./types/type";
 import { UserDetailsModal } from "./UserDetailsModal";
 
 

@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Posts } from "./Posts"
 import { Users } from "./Users"
 import { DataContext } from "./contexts/context"
-import { CommentInterface, UsersInterface } from "./types/type.type"
+import { CommentInterface, UsersInterface } from "./types/type"
 import styles from "./Feed.module.css"
 
 export const Feed = () => {
@@ -48,7 +48,7 @@ export const Feed = () => {
         },
     }
 
-    const [visibleButton, setVisibleButton] = useState<boolean>(false)
+    const [visibleButton] = useState<boolean>(false)
 
     return (
         <div className={styles.feed}>

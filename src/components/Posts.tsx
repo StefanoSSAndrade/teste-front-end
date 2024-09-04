@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext } from "react"
 import styles from "./Posts.module.css"
 import { DataContext } from "./contexts/context";
-import { CommentInterface, PostInterface } from "./types/type.type";
+import { CommentInterface, PostInterface } from "./types/type";
 
 export const Posts = () => {
 
